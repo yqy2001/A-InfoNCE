@@ -1,6 +1,6 @@
 # Adversarial Contrastive Learning via Asymmetric InfoNCE
 
-<img src="figures/intro.png" alt="intro" style="zoom:67%;" />
+<img src="figures/intro.png" alt="intro" style="zoom:55%;" />
 
 This is a PyTorch implementation of the paper [Adversarial Contrastive Learning via Asymmetric InfoNCE](https://arxiv.org/abs/2207.08374) (ECCV 2022). 
 
@@ -126,7 +126,7 @@ sh shell/cifar100/advcl-IPHN-cifar100.sh advcl-IPHN-cifar100 | tee logs/advcl-IP
 
 ## Citation
 
-If you find our work useful or provides some new insights about adversarial contrastive learning, please consider citing:blush::
+If you find our work useful or provides some new insights about adversarial contrastive learning:blush:, please consider citing:
 
 ```
 @article{yu2022adversarial,
