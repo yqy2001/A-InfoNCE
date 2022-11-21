@@ -87,12 +87,12 @@ class SupConLoss(nn.Module):
         )
         mask = mask * logits_mask
 
+        # For hard negatives, code adapted from HCL (https://github.com/joshr17/HCL)
         # =============== hard neg params =================
         tau_plus = self.args.tau_plus
         beta = self.args.beta
         temperature = 0.5
         N = (batch_size - 1) * contrast_count
-
         # =============== reweight neg =================
         # for numerical stability
         logits_max, _ = torch.max(anchor_dot_contrast, dim=1, keepdim=True)
@@ -105,12 +105,12 @@ class SupConLoss(nn.Module):
         imp = (beta * (exp_logits_neg + 1e-9).log()).exp()
         reweight_logits_neg = (imp * exp_logits_neg) / imp.mean(dim=-1)
         Ng = (-tau_plus * N * pos + reweight_logits_neg.sum(dim=-1)) / (1 - tau_plus)
-
         # constrain (optional)
         Ng = torch.clamp(Ng, min=N * np.e ** (-1 / temperature))
         log_prob = -torch.log(exp_logits / (pos + Ng))
         # ===============================================
-        loss_square = mask * log_prob  # only positive position have elements
+
+        loss_square = mask * log_prob  # only positive positions have elements
 
         # mix_square = exp_logits
         mix_square = loss_square

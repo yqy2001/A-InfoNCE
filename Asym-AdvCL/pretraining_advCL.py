@@ -266,9 +266,9 @@ else:
 net = AttackPGD(model, config)
 # Loss and optimizer
 ce_criterion = nn.CrossEntropyLoss(ignore_index=-1)
-if args.HN:
+if args.HN:  # loss of hard negative
     contrast_criterion = SupConLoss(args, temperature=args.nce_t)
-else:
+else:  # loss of inferior positive
     contrast_criterion = ori_SupConLoss(args, temperature=args.nce_t)
 optimizer = torch.optim.SGD(net.parameters(), lr=args.learning_rate, momentum=0.9, weight_decay=args.decay)
 

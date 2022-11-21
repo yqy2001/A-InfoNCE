@@ -1,0 +1,47 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="951" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="21">
+            <item index="0" class="java.lang.String" itemvalue="ruamel.yaml" />
+            <item index="1" class="java.lang.String" itemvalue="dill" />
+            <item index="2" class="java.lang.String" itemvalue="et-xmlfile" />
+            <item index="3" class="java.lang.String" itemvalue="requests" />
+            <item index="4" class="java.lang.String" itemvalue="grpcio-tools" />
+            <item index="5" class="java.lang.String" itemvalue="pynvml" />
+            <item index="6" class="java.lang.String" itemvalue="gunicorn" />
+            <item index="7" class="java.lang.String" itemvalue="loguru" />
+            <item index="8" class="java.lang.String" itemvalue="chardet" />
+            <item index="9" class="java.lang.String" itemvalue="jdcal" />
+            <item index="10" class="java.lang.String" itemvalue="boto3" />
+            <item index="11" class="java.lang.String" itemvalue="Celery" />
+            <item index="12" class="java.lang.String" itemvalue="ruamel.yaml.clib" />
+            <item index="13" class="java.lang.String" itemvalue="certifi" />
+            <item index="14" class="java.lang.String" itemvalue="paho-mqtt" />
+            <item index="15" class="java.lang.String" itemvalue="wandb" />
+            <item index="16" class="java.lang.String" itemvalue="gevent" />
+            <item index="17" class="java.lang.String" itemvalue="grpcio" />
+            <item index="18" class="java.lang.String" itemvalue="urllib3" />
+            <item index="19" class="java.lang.String" itemvalue="flask" />
+            <item index="20" class="java.lang.String" itemvalue="idna" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+          <option value="N802" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

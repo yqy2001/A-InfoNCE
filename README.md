@@ -129,14 +129,16 @@ sh shell/cifar100/advcl-IPHN-cifar100.sh advcl-IPHN-cifar100 | tee logs/advcl-IP
 If you find our work useful or provides some new insights about adversarial contrastive learning:blush:, please consider citing:
 
 ```
-@article{yu2022adversarial,
-    title={Adversarial Contrastive Learning via Asymmetric InfoNCE},
-    author={Yu, Qiying and Lou, Jieming and Zhan, Xianyuan and Li, Qizhang and Zuo, Wangmeng and Liu, Yang and Liu, Jingjing},
-    journal={arXiv preprint arXiv:2207.08374},
-    year={2022}
+@inproceedings{yu2022adversarial,
+  title={Adversarial Contrastive Learning via Asymmetric InfoNCE},
+  author={Yu, Qiying and Lou, Jieming and Zhan, Xianyuan and Li, Qizhang and Zuo, Wangmeng and Liu, Yang and Liu, Jingjing},
+  booktitle={European Conference on Computer Vision},
+  pages={53--69},
+  year={2022},
+  organization={Springer}
 }
 ```
 
 ## Acknowledgements
 
-We thank for the code implementation from [RoCL](https://github.com/Kim-Minseon/RoCL), [AdvCL](https://github.com/LijieFan/AdvCL) and [SupContrast](https://github.com/HobbitLong/SupContrast).
+We thank for the code implementation from [RoCL](https://github.com/Kim-Minseon/RoCL), [AdvCL](https://github.com/LijieFan/AdvCL), [HCL](https://github.com/joshr17/HCL) and [SupContrast](https://github.com/HobbitLong/SupContrast).
